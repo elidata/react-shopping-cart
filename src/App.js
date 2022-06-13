@@ -10,7 +10,7 @@ const PRODUCTS = [
     name: 'apple',
     pluralName: 'apples',
     image: 'images/apple.png',
-    priceText: '$0.30 each',
+    priceText: '$0.35 each',
     price: (quantity) => {
       return quantity * 30;
     }
