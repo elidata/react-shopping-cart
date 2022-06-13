@@ -5,8 +5,7 @@ import './App.css';
 const TAX_RATE = 0.06;
 const TAX_TEXT = '6% sales tax'
 // prices are in cents
-// second branch
-// third change
+
 const PRODUCTS = [
   {
     name: 'apple',
@@ -15,7 +14,7 @@ const PRODUCTS = [
     priceText: '$0.25 each',
 
     price: (quantity) => {
-      return quantity * 30;
+      return quantity * 25;
     }
   },
   {
