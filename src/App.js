@@ -1,52 +1,12 @@
 import React, { Component } from 'react';
 import NumericInput from 'react-numeric-input';
 import './App.css';
+import {products} from './products.js';
 
 const TAX_RATE = 0.06;
 const TAX_TEXT = '6% sales tax'
 // prices are in cents
 
-const PRODUCTS = [
-  {
-    name: 'apple',
-    pluralName: 'apples',
-    image: 'images/apple.png',
-    priceText: '$0.25 each',
-
-    price: (quantity) => {
-      return quantity * 25;
-    }
-  },
-  {
-    name: 'banana',
-    pluralName: 'bananas',
-    image: 'images/banana.png',
-    priceText: '$0.15 each',
-    price: (quantity) => {
-      return quantity * 15;
-    }
-  },
-  {
-    name: 'orange',
-    pluralName: 'oranges',
-    image: 'images/orange.png',
-    priceText: '$0.30 each',
-    price: (quantity) => {
-      return quantity * 30;
-    }
-  },
-  {
-    name: 'papaya',
-    pluralName: 'papayas',
-    image: 'images/papaya.png',
-    priceText: '$0.50 each',
-    dealText: '3 for $1',
-    price: (quantity) => {
-      let odds = quantity % 3;
-      return (((quantity - odds)/3) * 100) + (odds * 50);
-    }
-  },
-];
 
 function dollarsFromCents(n) {
   return '$' + parseFloat(n / 100).toFixed(2)
@@ -105,7 +65,7 @@ class App extends Component {
   }
   render() {
     let total = 0;
-    let storeProducts = PRODUCTS.map( (p, i) => {
+    let storeProducts = products.map( (p, i) => {
       let quantity = this.state.cart[p.name];
       let dealText = (p.dealText) ? (' or ' + p.dealText) : '';
       let productStyle = {
@@ -133,7 +93,7 @@ class App extends Component {
         </div>
       );
     } );
-    let cartProductRows = PRODUCTS
+    let cartProductRows = products
     .map( (p, i) => {
       let productStyle = {
         backgroundImage: 'url(' + p.image + ')'
