@@ -10,7 +10,11 @@ const PRODUCTS = [
     name: 'apple',
     pluralName: 'apples',
     image: 'images/apple.png',
+<<<<<<< HEAD
     priceText: '$0.35 each',
+=======
+    priceText: '$0.25 each',
+>>>>>>> first_branch
     price: (quantity) => {
       return quantity * 30;
     }
