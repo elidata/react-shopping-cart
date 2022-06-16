@@ -28,6 +28,15 @@ const PRODUCTS = [
       }
     },
     {
+      name: 'cherry',
+      pluralName: 'cherrys',
+      image: 'images/cherry.jpg',
+      priceText: '$0.35 each',
+      price: (quantity) => {
+        return quantity * 30;
+      }
+    },
+    {
       name: 'papaya',
       pluralName: 'papayas',
       image: 'images/papaya.png',
