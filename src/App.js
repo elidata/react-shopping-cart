@@ -27,25 +27,7 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-<<<<<<< HEAD
-      cart: {
-        'apple': 0,
-        'banana': 0,
-        'orange': 0,
-        'papaya': 0,
-        'pear':0,
-        'Book':0,
-        'pepper':0,
-        'peach':0,
-        'pomegranate': 0,
-        'kiwi': 0,
-        'melon': 0,
-        'cherry': 0,
-        'fruit platter':0,
-      }
-=======
       cart: []
->>>>>>> 93fccf717a4ab1e3391a8c79a4c87289643083eb
     };
 
     this.emptyCart = this.emptyCart.bind(this);
