@@ -22,6 +22,7 @@ class App extends Component {
         'orange': 0,
         'papaya': 0,
         'kiwi': 0,
+        'melon': 0,
       }
     };
     this.emptyCart = this.emptyCart.bind(this);
@@ -53,6 +54,7 @@ class App extends Component {
         'orange': 0,
         'papaya': 0,
         'kiwi': 0,
+        'melon': 0,
       };
       return prevState;
     } );
