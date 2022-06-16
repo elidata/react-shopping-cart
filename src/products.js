@@ -38,6 +38,16 @@ const PRODUCTS = [
         return (((quantity - odds)/3) * 100) + (odds * 50);
       }
     },
+    {
+      name: 'pear',
+      pluralName: 'pears',
+      image: 'images/pear.jpg',
+      priceText: '$0.50 each',
+      dealText: '$0.40 each',
+        price: (quantity) => {
+          return quantity * 40;
+      }
+    },
   ];
 
   export const products = PRODUCTS ;
