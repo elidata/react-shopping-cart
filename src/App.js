@@ -21,12 +21,17 @@ class App extends Component {
         'banana': 0,
         'orange': 0,
         'papaya': 0,
+        'pear':0,
+        'Book':0,
+        'pepper':0,
+        'peach':0,
         'pomegranate': 0,
         'kiwi': 0,
         'melon': 0,
         'cherry': 0,
       }
     };
+
     this.emptyCart = this.emptyCart.bind(this);
   }
   addFruit(productName) {
@@ -55,6 +60,9 @@ class App extends Component {
         'banana': 0,
         'orange': 0,
         'papaya': 0,
+        'pear':0,
+        'pepper':0,
+        'peach':0,
         'kiwi': 0,
         'melon': 0,
       };
