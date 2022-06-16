@@ -43,6 +43,11 @@ const PRODUCTS = [
       pluralName: 'pomegranates',
       image: 'images/pomegranate.png',
       priceText: '$0.65 each',
+      price: (quantity) => {
+        return quantity * 65;
+      }
+    },
+    {
       name: 'kiwi',
       pluralName: 'kiwis',
       image: 'images/kiwi.jpeg',
