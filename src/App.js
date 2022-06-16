@@ -21,6 +21,7 @@ class App extends Component {
         'banana': 0,
         'orange': 0,
         'papaya': 0,
+        'Tvd Book':0,
       }
     };
     this.emptyCart = this.emptyCart.bind(this);
