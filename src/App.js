@@ -16,6 +16,7 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
+<<<<<<< HEAD
       cart: {
         'apple': 0,
         'banana': 0,
@@ -31,6 +32,9 @@ class App extends Component {
         'cherry': 0,
         'fruit platter':0,
       }
+=======
+      cart: []
+>>>>>>> 93fccf717a4ab1e3391a8c79a4c87289643083eb
     };
 
     this.emptyCart = this.emptyCart.bind(this);
@@ -39,7 +43,10 @@ class App extends Component {
     return (e) => {
       e.preventDefault();
       this.setState( (prevState) => {
-        prevState.cart[productName]++;
+        //prevState.cart[productName]++;
+        prevState.cart[productName] >= 1 ?
+            prevState.cart[productName]++ :
+            prevState.cart[productName] = 1 ;
         return prevState;
       } );
     }
@@ -56,17 +63,7 @@ class App extends Component {
   emptyCart(e) {
     e.preventDefault();
     this.setState( (prevState) => {
-      prevState.cart = {
-        'apple': 0,
-        'banana': 0,
-        'orange': 0,
-        'papaya': 0,
-        'pear':0,
-        'pepper':0,
-        'peach':0,
-        'kiwi': 0,
-        'melon': 0,
-      };
+      prevState.cart = [];
       return prevState;
     } );
   }
