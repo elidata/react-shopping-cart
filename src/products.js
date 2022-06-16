@@ -120,7 +120,7 @@ const PRODUCTS = [
     {
       name: 'fruit platter',
       pluralName: 'fruit platters',
-      image: 'images/fruitplatters.jpg',
+      image: 'images/fruitplatter.jpg',
       priceText: '$20.00 each',
       price: (quantity) => {
         return quantity * 2000;
