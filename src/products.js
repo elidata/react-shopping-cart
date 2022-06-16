@@ -28,6 +28,15 @@ const PRODUCTS = [
       }
     },
     {
+      name: 'cherry',
+      pluralName: 'cherrys',
+      image: 'images/cherry.jpg',
+      priceText: '$0.35 each',
+      price: (quantity) => {
+        return quantity * 35;
+      }
+    },
+    {
       name: 'papaya',
       pluralName: 'papayas',
       image: 'images/papaya.png',
@@ -52,10 +61,13 @@ const PRODUCTS = [
       pluralName: 'Books',
       image: 'images/tvd.jpg',
       priceText: '$50.00 each',
+      dealText: '3 for $120',
       price: (quantity) => {
-        return quantity * 5000.00;
+        let odds =quantity % 3;
+        return (((quantity - odds)/3) * 12000) + (odds * 5000);
       }
     },
+    
     {
       name:'pepper',
       pluralName:'peppers',
