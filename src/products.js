@@ -39,6 +39,15 @@ const PRODUCTS = [
       }
     },
     {
+      name: 'pear',
+      pluralName: 'pears',
+      image: 'images/pear.jpg',
+      priceText: '$0.50 each',
+        price: (quantity) => {
+          return quantity * 40;
+        }
+      },
+      {
       name: 'Book',
       pluralName: 'Books',
       image: 'images/tvd.jpg',
