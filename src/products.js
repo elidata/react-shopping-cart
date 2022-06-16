@@ -117,6 +117,15 @@ const PRODUCTS = [
         return quantity * 65;
       }
     },
+    {
+      name: 'fruit platter',
+      pluralName: 'fruit platters',
+      image: 'images/fruitplatters.jpg',
+      priceText: '$20.00 each',
+      price: (quantity) => {
+        return quantity * 2000;
+      }
+    },
   ];
 
   export const products = PRODUCTS ;
