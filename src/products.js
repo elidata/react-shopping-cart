@@ -47,6 +47,35 @@ const PRODUCTS = [
         return quantity * 5000.00;
       }
     },
+    {
+      name: 'pomegranate',
+      pluralName: 'pomegranates',
+      image: 'images/pomegranate.png',
+      priceText: '$0.65 each',
+      price: (quantity) => {
+        return quantity * 65;
+      }
+    },
+    {
+      name: 'kiwi',
+      pluralName: 'kiwis',
+      image: 'images/kiwi.jpeg',
+      priceText: '$0.50 each',
+      dealText: '3 for $1',
+      price: (quantity) => {
+        let odds = quantity % 3;
+        return (((quantity - odds)/3) * 100) + (odds * 50);
+      }
+    },
+    {
+      name: 'melon',
+      pluralName: 'melons',
+      image: 'images/melon.jpg',
+      priceText: '$0.95 each',
+      price: (quantity) => {
+        return quantity * 65;
+      }
+    },
   ];
 
   export const products = PRODUCTS ;

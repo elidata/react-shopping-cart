@@ -21,7 +21,10 @@ class App extends Component {
         'banana': 0,
         'orange': 0,
         'papaya': 0,
-        'Tvd Book':0,
+        'Book':0,
+        'pomegranate': 0,
+        'kiwi': 0,
+        'melon': 0,
       }
     };
     this.emptyCart = this.emptyCart.bind(this);
@@ -52,6 +55,8 @@ class App extends Component {
         'banana': 0,
         'orange': 0,
         'papaya': 0,
+        'kiwi': 0,
+        'melon': 0,
       };
       return prevState;
     } );
