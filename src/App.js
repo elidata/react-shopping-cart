@@ -3,6 +3,7 @@ import NumericInput from 'react-numeric-input';
 import './App.css';
 import {products} from './products.js';
 
+
 const TAX_RATE = 0.06;
 const TAX_TEXT = '6% sales tax'
 // prices are in cents
@@ -11,6 +12,16 @@ const TAX_TEXT = '6% sales tax'
 function dollarsFromCents(n) {
   return '$' + parseFloat(n / 100).toFixed(2)
 }
+
+function backgroundImage(){
+  return(
+  <div className="container">
+    <h1>BackgroundImage</h1>
+  </div>
+  );
+}
+    
+
 
 class App extends Component {
   constructor(props) {
