@@ -48,6 +48,15 @@ const PRODUCTS = [
       }
     },
     {
+      name:'pepper',
+      pluralName:'peppers',
+      image:'images/pepper.jpg',
+      priceText:'0.50 each',
+      price:(quantity)=>{
+        return quantity*50;
+      }
+    },
+     {
       name: 'peach',
       pluralName: 'peaches',
       image: 'images/peach.jpg',
