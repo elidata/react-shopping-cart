@@ -59,14 +59,11 @@ class App extends Component {
         'banana': 0,
         'orange': 0,
         'papaya': 0,
-<<<<<<< HEAD
         'pear':0,
-=======
         'pepper':0,
         'peach':0,
         'kiwi': 0,
         'melon': 0,
->>>>>>> 8633a98a942992d52e55eda7e86ffd83c7941f84
       };
       return prevState;
     } );
