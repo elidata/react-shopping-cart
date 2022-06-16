@@ -33,7 +33,7 @@ const PRODUCTS = [
       image: 'images/cherry.jpg',
       priceText: '$0.35 each',
       price: (quantity) => {
-        return quantity * 30;
+        return quantity * 35;
       }
     },
     {
