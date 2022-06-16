@@ -61,10 +61,13 @@ const PRODUCTS = [
       pluralName: 'Books',
       image: 'images/tvd.jpg',
       priceText: '$50.00 each',
+      dealText: '3 for $120',
       price: (quantity) => {
-        return quantity * 5000.00;
+        let odds =quantity % 3;
+        return (((quantity - odds)/3) * 12000) + (odds * 5000);
       }
     },
+    
     {
       name:'pepper',
       pluralName:'peppers',
