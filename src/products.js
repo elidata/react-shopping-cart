@@ -46,7 +46,26 @@ const PRODUCTS = [
       price:(quantity)=>{
         return quantity*50;
       }
-     
+    },
+     {
+      name: 'kiwi',
+      pluralName: 'kiwis',
+      image: 'images/kiwi.jpeg',
+      priceText: '$0.50 each',
+      dealText: '3 for $1',
+      price: (quantity) => {
+        let odds = quantity % 3;
+        return (((quantity - odds)/3) * 100) + (odds * 50);
+      }
+    },
+    {
+      name: 'melon',
+      pluralName: 'melons',
+      image: 'images/melon.jpg',
+      priceText: '$0.95 each',
+      price: (quantity) => {
+        return quantity * 95;
+      }
     },
   ];
 
