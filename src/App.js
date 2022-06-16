@@ -52,6 +52,7 @@ class App extends Component {
         'banana': 0,
         'orange': 0,
         'papaya': 0,
+        'pepper':0,
       };
       return prevState;
     } );
