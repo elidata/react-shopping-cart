@@ -50,6 +50,15 @@ const PRODUCTS = [
       }
     },
     {
+      name: 'pomegranate',
+      pluralName: 'pomegranates',
+      image: 'images/pomegranate.png',
+      priceText: '$0.65 each',
+      price: (quantity) => {
+        return quantity * 65;
+      }
+    },
+    {
       name: 'kiwi',
       pluralName: 'kiwis',
       image: 'images/kiwi.jpeg',
@@ -66,7 +75,7 @@ const PRODUCTS = [
       image: 'images/melon.jpg',
       priceText: '$0.95 each',
       price: (quantity) => {
-        return quantity * 95;
+        return quantity * 65;
       }
     },
   ];

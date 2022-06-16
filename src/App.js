@@ -22,6 +22,7 @@ class App extends Component {
         'orange': 0,
         'papaya': 0,
         'peach':0,
+        'pomegranate': 0,
         'kiwi': 0,
         'melon': 0,
       }
