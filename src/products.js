@@ -43,7 +43,6 @@ const PRODUCTS = [
       pluralName: 'pears',
       image: 'images/pear.jpg',
       priceText: '$0.50 each',
-      dealText: '$0.40 each',
         price: (quantity) => {
           return quantity * 40;
       }

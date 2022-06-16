@@ -21,10 +21,10 @@ class App extends Component {
         'banana': 0,
         'orange': 0,
         'papaya': 0,
-        'kiwi':0,
+        'pear':0,
       }
     };
-    
+
     this.emptyCart = this.emptyCart.bind(this);
   }
   addFruit(productName) {
